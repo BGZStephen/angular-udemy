@@ -1,0 +1,12 @@
+<h1>Attribute directives</h1>
+<h2>ngClass</h2>
+<div [ngClass]="{border: false, background: true}"></div>
+<div [ngClass]="{border: true, background: false}"></div>
+<div [class.border]="true"></div>
+<div [class.background]="true"></div>
+<hr>
+<h2>ngStyles</h2>
+<div [ngStyle]="{'background': 'red'}"></div>
+<hr>
+<h2>Custom Attribute Directives</h2>
+<div [dirHighlight]="'#369'" [defaultColor]="'tomato'">dirHighlight directive</div>
