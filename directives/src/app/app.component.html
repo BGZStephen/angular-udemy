@@ -1,12 +1,28 @@
 <h1>Attribute directives</h1>
 <h2>ngClass</h2>
 <div [ngClass]="{border: false, background: true}"></div>
-<div [ngClass]="{border: true, background: false}"></div>
-<div [class.border]="true"></div>
-<div [class.background]="true"></div>
 <hr>
 <h2>ngStyles</h2>
 <div [ngStyle]="{'background': 'red'}"></div>
 <hr>
 <h2>Custom Attribute Directives</h2>
 <div [dirHighlight]="'#369'" [defaultColor]="'tomato'">dirHighlight directive</div>
+<hr>
+<h1>Structural Directives</h1>
+<h2>*ngIf</h2>
+<div *ngIf="switch">Conditional Test</div>
+<button (click)="onSwitch()">Switch</button>
+<hr>
+<h2>*ngFor</h2>
+<span *ngFor="let item of items; let i = index">
+  <p>First Name: {{item.firstName}}</p>
+  <p>Surname: {{item.lastName}}</p>
+  <hr>
+</span>
+<hr>
+<h2>ngSwitch</h2>
+<div [ngSwitch]="value">
+  <p *ngSwitchCase="20">20</p>
+  <p *ngSwitchCase="200">200</p>
+  <p *ngSwitchDefault>Default</p>
+</div>

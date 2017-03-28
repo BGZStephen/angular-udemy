@@ -7,4 +7,16 @@ import { HighlightDirective } from './highlight.directive';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  private items = [
+    {firstName: "Stephen", lastName: "Wright"},
+    {firstName: "Lydia", lastName: "Wright"},
+    {firstName: "Isaac", lastName: "Wright"},
+    {firstName: "Reuben", lastName: "Wright"},
+    {firstName: "Wendy", lastName: "Girling"}
+     ];
+  private value = 20;
+  private switch = true;
+  onSwitch() {
+    this.switch = !this.switch;
+  }
 }
