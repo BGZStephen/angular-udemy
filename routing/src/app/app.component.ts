@@ -4,6 +4,11 @@ import { Component } from '@angular/core'
   moduleId: module.id,
   selector: 'app-root',
   templateUrl: 'app.component.html',
+  styles: [`
+    .active {
+      color: red;
+    }
+  `]
 })
 export class AppComponent {
 }

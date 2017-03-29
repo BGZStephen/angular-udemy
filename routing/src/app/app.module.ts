@@ -6,6 +6,8 @@ import { HomeComponent } from "./home-component.component";
 import { UserEditComponent } from "./user/user-edit.component";
 import { UserDetailComponent } from "./user/user-detail.component";
 import { routing } from "./app.routing";
+import { UserDetailGuard } from "./user/user-detail.guard";
+import { UserEditGuard } from "./user/user-edit.guard";
 
 @NgModule({
     declarations: [
@@ -17,6 +19,6 @@ import { routing } from "./app.routing";
     ],
     imports: [BrowserModule, routing],
     bootstrap: [AppComponent],
-    providers: []
+    providers: [UserDetailGuard, UserEditGuard]
 })
 export class AppModule {}

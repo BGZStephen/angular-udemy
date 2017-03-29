@@ -14,6 +14,18 @@ import { Subscription } from "rxjs/Rx";
   `,
   styles: []
 })
-export class HomeComponent {
+export class HomeComponent implements OnDestroy {
+  private subscription: Subscription;
 
+  param: string;
+
+  constructor(private router: Router) {
+    this.subscription = router.routerState.root.queryParams.subscribe(
+      (queryParam: any) => this.param = queryParam['analytics']
+    );
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe;
+  }
 }

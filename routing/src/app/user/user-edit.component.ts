@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from "@angular/router";
 import { Observable } from "rxjs/Rx";
+import { ComponentCanDeactivate } from "./user-edit.guard";
 
 @Component({
     moduleId: module.id,
@@ -11,6 +12,19 @@ import { Observable } from "rxjs/Rx";
         <button class="btn btn-alert" (click)="onNavigate()">Go Home</button>
     `
 })
-export class UserEditComponent {
+export class UserEditComponent implements ComponentCanDeactivate {
+  done = false;
 
+  constructor(private router: Router) {}
+
+  onNavigate() {
+    this.router.navigate(['/'], {queryParams: {'analytics': 100}})
+  }
+
+  canDeactivate(): Observable<boolean> | boolean {
+    if(!this.done) {
+      return confirm('do you want to leave?')
+    }
+    return true;
+  }
 }
