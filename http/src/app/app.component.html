@@ -1,0 +1,10 @@
+<label for="username" >Username</label>
+<input type="text" #username id="username">
+<label for="email" >Email</label>
+<input type="text" #email id="email">
+<button (click)="onSubmit(username.value, email.value)">Submit</button>
+<hr>
+<button (click)="onGetData()">Get Data</button>
+<ul>
+  <li *ngFor="let item of items">Name: {{item.username}}, Email: {{item.email}}</li>
+</ul>
