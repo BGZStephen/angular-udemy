@@ -1,0 +1,27 @@
+<div class="pipes">
+  <h1>Pipes</h1>
+  <h2>Built-in Pipes</h2>
+  <p>{{myValue | uppercase}}</p>
+  <p>{{myDate | date:"dd/MM/yyyy" }}</p>
+  <p>{{myValue | slice:3:7}}</p>
+  <p>{{myValue | slice:3:7 | uppercase}}</p>
+  <hr>
+  <h2>Custom Pipet</h2>
+  <h3>Double the value</h3>
+  <input type="text" #input (keyup)="0">
+  <p>{{input.value | double}}</p>
+  <hr>
+  <h3>Triple the value</h3>
+  <input type="text" #input (keyup)="0">
+  <p>{{input.value | triple}}</p>
+  <hr>
+  <h3>Filter Pipe</h3>
+  <input type="text" #item>
+  <button (click)="values.push(item.value)">Add</button>
+  <ul>
+    <li *ngFor="let item of values | filter:'e'">{{item}}</li>
+  </ul>
+  <hr>
+  <h3>Async Pipe</h3>
+  {{asyncValue | async}}
+</div>
