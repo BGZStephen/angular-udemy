@@ -1,0 +1,27 @@
+{
+  "recipes" : [ {
+    "description" : "Named Bourbon Chicken because it was supposedly created by a Chinese cook who worked in a restaurant on Bourbon Street.",
+    "imagePath" : "http://img.sndimg.com/food/image/upload/h_420,w_560,c_fit/v1/img/recipes/45/80/9/ggIfR8tpTUOkImhj16cV_DSC_1678-2.jpg",
+    "name" : "Bourbon Chicken"
+  }, {
+    "description" : "Place beef roast in crock pot.\nMix the dried mixes together in a bowl and sprinkle over the roast.\nPour the water around the roast.\nCook on low for 7-9 hours.\nUse onion soup mix instead of ranch.\nAdd one cup,of red wine.\nAdd potatoes,carrots,mushrooms,celery and onion 2-3 hours before end.\n",
+    "imagePath" : "http://img.sndimg.com/food/image/upload/h_420,w_560,c_fit/v1/img/recipes/27/20/8/picVfzLZo.jpg",
+    "ingredients" : [ {
+      "amount" : "1",
+      "name" : "Beef"
+    } ],
+    "name" : "To Die for Crock Pot Roast"
+  }, {
+    "description" : "Directions\nTake 4-5 frozen, yes, frozen, boneless chicken breasts put into crock pot.\nAdd 1 can of black beans, drained, 1 jar of salsa, 1 can of corn drained.\nKeep in crock pot on high for about 4-5 hours or until chicken is cooked.\nAdd 1 package of cream cheese (just throw it on top!) and let sit for about 1/2 hour.\nAll done and enjoy!",
+    "imagePath" : "http://img.sndimg.com/food/image/upload/h_420,w_560,c_fit/v1/img/recipes/89/20/4/uxMwt1VGQ5m2ePyzwHWy_salsa-chicken-black-beans-2312.jpg",
+    "name" : "Crock-Pot Chicken With Cheese"
+  }, {
+    "description" : "Directions\nPlace chicken and Cajun seasoning in a bowl and toss to coat.\nIn a large skillet over medium heat, sauté chicken in butter or margarine until chicken is tender, about 5 to 7 minutes.\nReduce heat add green onion, heavy cream, tomatoes, basil, salt, garlic powder, black pepper and heat through.\nPour over hot linguine and toss with Parmesan cheese.",
+    "imagePath" : "http://img.sndimg.com/food/image/upload/h_420,w_560,c_fit/v1/img/recipes/39/08/7/piccZDaro.jpg",
+    "name" : "Creamy Cajun Chicken Pasta"
+  }, {
+    "description" : "Directions\n\nPreheat oven to 275°F (135C).\nGrease and flour a 9 x 13 pan.\nIn a small bowl, mix mashed banana with the lemon juice; set aside.\nIn a medium bowl, mix flour, baking soda and salt; set aside.\nIn a large bowl, cream 3/4 cup butter and 2 1/8 cups sugar until light and fluffy.\nBeat in eggs, one at a time, then stir in 2 tsp vanilla.\nBeat in the flour mixture alternately with the buttermilk.\n",
+    "imagePath" : "http://img.sndimg.com/food/image/upload/h_420,w_560,c_fit/v1/img/recipes/67/25/6/ErcPhaBVS2OMnh07iiZf_banana-cake-with-cream-cheese-frosting-08.jpg",
+    "name" : "Banana Cake w/ Cream Cheese Frosting"
+  } ]
+}

@@ -45,6 +45,10 @@ export class RecipeEditComponent implements OnInit {
     } else {
       this.recipeService.editRecipe(this.recipe, newRecipe)
     }
+    this.recipeService.storeData().subscribe(
+      data => console.log(data),
+      error => console.log(error)
+    )
     this.navigateBack()
   }
 
@@ -70,7 +74,7 @@ export class RecipeEditComponent implements OnInit {
   }
 
   private navigateBack() {
-    this.router.navigate(['../'])
+    this.router.navigate(['/recipes'])
   }
 
   ngOnDestroy() {
