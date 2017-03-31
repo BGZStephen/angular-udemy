@@ -15,7 +15,7 @@ export class RecipeEditComponent implements OnInit {
   private recipe: Recipe;
   private isNew = true;
   private recipeIndex: number;
-  private recipeForm: FormGroup;
+  public recipeForm: FormGroup;
 
   constructor(private route: ActivatedRoute,
     private recipeService: RecipeService,
@@ -63,6 +63,10 @@ export class RecipeEditComponent implements OnInit {
 
   onRemoveItem(index: number) {
     (<FormArray>this.recipeForm.controls['ingredients']).removeAt(index)
+  }
+
+  getIngredients(recipeForm){
+    return recipeForm.get('ingredients').controls
   }
 
   private navigateBack() {

@@ -9,5 +9,5 @@ import { LifecycleComponent } from "./lifecycle.component"
 export class AppComponent {
   delete = false;
   test = "staring value";
-  boundValue: 1000;  
+  boundValue: 2000;  
 }
