@@ -9,21 +9,19 @@ import { DropdownDirective } from './dropdown.directive';
 import { ShoppingListService } from "./shopping-list/shopping-list.service";
 import { RecipeService } from "./recipes/recipe.service";
 import { routing } from "./app.routes";
-import { ShoppingListModule } from "./shopping-list/shopping-list.module"
-import { RecipesModule } from "./recipes/recipes.module"
+import { HomeComponent } from "./home.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DropdownDirective,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     routing,
-    ShoppingListModule,
-    RecipesModule
   ],
   providers: [RecipeService, ShoppingListService],
   bootstrap: [AppComponent],
